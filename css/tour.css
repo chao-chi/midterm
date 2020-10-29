@@ -5,12 +5,14 @@ html{
     box-sizing: border-box;
 }
 
-a,a:link,a:visited{
+.nav_list_item a,a:link,a:visited{
     text-decoration:none;
+    transition: color 0.3s;
     color:#FFFFFF;
 }
 
-a:hover{
+.nav_list_item a:hover{
+    transition: color 0.3s;
     color:#6b0139;
 }
 
@@ -28,16 +30,23 @@ a:hover{
     width: 260px;
     height: 260px;
     z-index:9;
+    transform:scale(1,1);
+    transition: all 0.3s ease-out;
+}
+
+.logo:hover{
+    transform:scale(1.2,1.2);
 }
 
 /* contatct */
 .contact{
-    min-width: 720px;
+ 
     display: flex;
     flex-direction: row;
+
     position: absolute;
     top:60px;
-    left:1160px;
+    right:120px;
     box-sizing: border-box;
 }
 
@@ -88,111 +97,6 @@ a:hover{
     margin-right:55px;
 }
 
-/* profile */
-.profile{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.profile_word{
-    position: absolute;;
-    z-index:999;
-    font-size:120px;
-    color:#FFFFFF;
-    font-family: "Roboto Slab",serif;
-    font-weight: 900;
-}
-
-.GEGEU3U{
-    position:relative;
-    display:block;
-    width: 100%;
-    z-index:99;
-}
-
-/* introduction */
-.introduction{
-    position:relative;
-    height: 920px;
-    width:100%;
-    background-color: #FDE9F4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* gege */
-.gege{
-    position: relative;
-    display: flex;
-}
-
-.gege_img{
-    position: relative;
-    width:200px;
-    height:200px;
-    border-radius: 50%;
-}
-
-.gege_text{
-    margin-left:100px;
-}
-
-.gege_title{
-    font-family: "Noto Sans TC",sans-serif;
-    font-weight: 700;
-    font-size:36px;
-}
-
-.gege_word{
-    font-family: "Noto Sans TC",sans-serif;
-    font-weight: 300;
-    font-size:18px;
-    padding:20px 30px;
-    background-color: #FFFFFF;
-    border-radius: 30px;
-    width: 560px;
-    height: 100px;
-}
-
-/* shan */
-.shan{
-    position: relative;
-    display: flex;
-    flex-direction: row-reverse;
-    margin-top:100px;
-}
-
-.shan_img{
-    position: relative;
-    width:200px;
-    height:200px;
-    border-radius: 50%;
-}
-
-.shan_text{
-    margin-right:100px;
-}
-
-.shan_title{
-    font-family: "Noto Sans TC",sans-serif;
-    font-weight: 700;
-    font-size:36px;
-}
-
-.shan_word{
-    font-family: "Noto Sans TC",sans-serif;
-    font-weight: 300;
-    font-size:18px;
-    padding:20px 30px;
-    background-color: #FFFFFF;
-    border-radius: 30px;
-    width: 560px;
-    height: 100px;
-}
-
 /* nav_bottom */
 .nav_bottom{
     display:flex;
@@ -231,17 +135,21 @@ a:hover{
 }
 
 .footer_ge3{
+    position: relative;
     color: #FFFFFF;
     font-size:36px;
     font-family: "Noto Sans TC",sans-serif;
     font-weight: 700;
+    margin:30px 0 0 0;
 }
 
 .footer_word1{
+    position: relative;
     color: #FFFFFF;
     font-size:12px;
     font-family: "Noto Sans TC",sans-serif;
     font-weight: 300;
+    margin:10px 0 0 0;
 }
 
 .footer_word2{
@@ -249,4 +157,5 @@ a:hover{
     font-size:12px;
     font-family: "Noto Sans TC",sans-serif;
     font-weight: 300;
+    margin:40px 0 30px 0;
 }
