@@ -2,8 +2,13 @@
 html{
     min-width: 1280px;
     margin:0 auto;
-    box-sizing: border-box;
 }
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;  
+  }
 
 .nav_list_item a,a:link,a:visited{
     text-decoration:none;
@@ -40,20 +45,16 @@ html{
 
 /* contatct */
 .contact{
- 
     display: flex;
     flex-direction: row;
-
     position: absolute;
     top:60px;
     right:120px;
-    box-sizing: border-box;
 }
 
 .ig{
     width: 30px;
     height: 30px;
-    color:#6b0139;
 }
 
 .fb{
@@ -96,6 +97,50 @@ html{
     font-size:18px;
     margin-right:55px;
 }
+
+/* article */
+.article{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index:99;
+    background-color: #FDE9F4;
+}
+
+.animate{
+    width:900px;
+    margin:50px auto;
+}
+
+.intro{
+    width:900px;
+    margin:50px auto;
+}
+
+.title{
+    font-family: "Noto Sans TC",sans-serif;
+    font-weight: 700;
+    font-size:24px;
+    line-height: 24px;
+    margin:0;
+    padding:15px 30px;
+    border-radius: 30px;
+    background-color: #eebbd2;
+    color:#FFFFFF;
+    letter-spacing: 2px;
+}
+
+.content{
+    font-family: "Noto Sans TC",sans-serif;
+    font-weight: 300;
+    font-size:18px;
+    line-height: 30px;
+    margin:20px 0 0 0;
+    padding:20px 30px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+}
+
 
 /* nav_bottom */
 .nav_bottom{

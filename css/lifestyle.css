@@ -2,8 +2,13 @@
 html{
     min-width: 1280px;
     margin:0 auto;
-    box-sizing: border-box;
 }
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;  
+  }
 
 .nav_list_item a,a:link,a:visited{
     text-decoration:none;
@@ -40,20 +45,16 @@ html{
 
 /* contatct */
 .contact{
- 
     display: flex;
     flex-direction: row;
-
     position: absolute;
     top:60px;
     right:120px;
-    box-sizing: border-box;
 }
 
 .ig{
     width: 30px;
     height: 30px;
-    color:#6b0139;
 }
 
 .fb{
@@ -79,145 +80,276 @@ html{
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
-    width:1280px;
+    width:1090px;
     margin:100px auto;
     justify-content: center;
 }
 
+/* block1 */
 .block1{
+    display: flex;
+    width: 470px;
+    height: 470px;
+    /* 3D效果 */
+    /* perspective: 1000px; */
+}
+
+.block1_inner{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.block1_front{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 470px;
-    height: 470px;
-    background-color: #FFFFFF;
-    margin:0 150px 0 0;
-    padding:30px;
+    background-color: #eebbd2;
     border-radius: 30px;
-    transition:background-color 0.3s;
-    box-sizing: border-box;
+    margin:0;
 }
 
-.block1:hover{
-    background-color: #eebbd2;
+.block1_day{
+    position: absolute; 
+    color:#FFFFFF;
+    font-family: "Roboto Slab",serif;
+    font-size:36px;
+    font-weight: 700px;
+    letter-spacing: 2px;
+}
+
+.block1_back{
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding:30px;
+    border-radius: 30px;
 }
 
 .block1_word{
     font-family: "Noto Sans TC",sans-serif;
     font-size:18px;
     font-weight: 300px;
-    color:#e4a1bf;
+    color:#C91B68;
+    line-height: 24px;
 }
 
-.block1_title{
+/* block_flip */
+.block1:hover .block1_inner {
+    transform: rotateY(180deg);
+  }
+
+.block1_back {
+    transform: rotateY(180deg);
+}
+
+.block1_front, .block1_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* block2 */
+.block2{
+    display: flex;
+    width: 470px;
+    height: 470px;
+    margin:0 0 0 150px;
+    /* 3D效果 */
+    /* perspective: 1000px; */
+}
+
+.block2_inner{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.block2_front{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eebbd2;
+    border-radius: 30px;
+    margin:0;
+}
+
+.block2_day{
     position: absolute; 
     color:#FFFFFF;
     font-family: "Roboto Slab",serif;
     font-size:36px;
     font-weight: 700px;
-    display: none;
+    letter-spacing: 2px;
 }
 
-.block2{
+.block2_back{
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 470px;
-    height: 470px;
     background-color: #FFFFFF;
-    margin:0;
     padding:30px;
     border-radius: 30px;
-    transition:background-color 0.3s;
-    box-sizing: border-box;
-}
-
-.block2:hover{
-    background-color: #eebbd2;
 }
 
 .block2_word{
     font-family: "Noto Sans TC",sans-serif;
     font-size:18px;
     font-weight: 300px;
-    color:#e4a1bf;
+    color:#C91B68;
+    line-height: 24px;
 }
 
-.block2_title{
+/* block_flip */
+.block2:hover .block2_inner {
+    transform: rotateY(180deg);
+  }
+
+.block2_back {
+    transform: rotateY(180deg);
+}
+
+.block2_front, .block2_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* block3 */
+.block3{
+    display: flex;
+    width: 470px;
+    height: 470px;
+    margin:150px 0 0 0;
+    /* 3D效果 */
+    /* perspective: 1000px; */
+}
+
+.block3_inner{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.block3_front{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eebbd2;
+    border-radius: 30px;
+    margin:0;
+}
+
+.block3_day{
     position: absolute; 
     color:#FFFFFF;
     font-family: "Roboto Slab",serif;
     font-size:36px;
     font-weight: 700px;
-    display: none;
+    letter-spacing: 2px;
 }
 
-.block3{
+.block3_back{
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 470px;
-    height: 470px;
     background-color: #FFFFFF;
-    margin:150px 150px 0 0;
     padding:30px;
     border-radius: 30px;
-    transition:background-color 0.3s;
-    box-sizing: border-box;
-}
-
-.block3:hover{
-    background-color: #eebbd2;
 }
 
 .block3_word{
     font-family: "Noto Sans TC",sans-serif;
     font-size:18px;
     font-weight: 300px;
-    color:#e4a1bf;
+    color:#C91B68;
+    line-height: 24px;
 }
 
-.block3_title{
+/* block_flip */
+.block3:hover .block3_inner {
+    transform: rotateY(180deg);
+  }
+
+.block3_back {
+    transform: rotateY(180deg);
+}
+
+.block3_front, .block3_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* block4 */
+.block4{
+    display: flex;
+    width: 470px;
+    height: 470px;
+    margin:150px 0 0 150px;
+    /* 3D效果 */
+    /* perspective: 1000px; */
+}
+
+.block4_inner{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.block4_front{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eebbd2;
+    border-radius: 30px;
+    margin:0;
+}
+
+.block4_day{
     position: absolute; 
     color:#FFFFFF;
     font-family: "Roboto Slab",serif;
     font-size:36px;
     font-weight: 700px;
-    display: none;
+    letter-spacing: 2px;
 }
 
-.block4{
+.block4_back{
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 470px;
-    height: 470px;
     background-color: #FFFFFF;
-    margin:150px 0 0 0;
     padding:30px;
     border-radius: 30px;
-    transition:background-color 0.3s;
-    box-sizing: border-box;
-}
-
-.block4:hover{
-    background-color: #eebbd2;
 }
 
 .block4_word{
     font-family: "Noto Sans TC",sans-serif;
     font-size:18px;
     font-weight: 300px;
-    color:#e4a1bf;
+    color:#C91B68;
+    line-height: 24px;
 }
 
-.block4_title{
-    position: absolute; 
-    color:#FFFFFF;
-    font-family: "Roboto Slab",serif;
-    font-size:36px;
-    font-weight: 700px;
-    display: none;
+/* block_flip */
+.block4:hover .block4_inner {
+    transform: rotateY(180deg);
+  }
+
+.block4_back {
+    transform: rotateY(180deg);
+}
+
+.block4_front, .block4_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
 }
 
 /* nav */
