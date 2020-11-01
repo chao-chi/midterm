@@ -30,7 +30,7 @@ html{
 .logo{
     display:block;
     position: absolute;
-    left:120px;
+    left:106px;
     top:-60px;
     width: 260px;
     height: 260px;
@@ -43,6 +43,14 @@ html{
     transform:scale(1.2,1.2);
 }
 
+.header_animate{
+    position: absolute;
+    width:1920px;
+    height:140px;
+    border:0;
+    z-index:0;
+}
+
 /* contatct */
 .contact{
     display: flex;
@@ -50,6 +58,7 @@ html{
     position: absolute;
     top:60px;
     right:120px;
+    z-index:9;
 }
 
 .ig{
@@ -104,16 +113,118 @@ html{
     flex-direction: column;
     position: relative;
     z-index:99;
-    background-color: #FDE9F4;
+    background-color: #fdeff8;
 }
 
+/* tags */
+.tag_hualian{
+    display:inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tag_waterfall{
+    display:inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tag_7{
+    display:inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tag_nightmk{
+    display:inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tag_redtea{
+    display:inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tag_bao{
+    display:inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tag_starbucks{
+    display:inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tag_farm{
+    display:inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tag_pineapple{
+    display:inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* tags_common */
+.tag_block{
+    /* display:inline-block; */
+    background-color: #eebbd2;
+    margin:0;
+    padding:10px 15px;
+    border-radius: 30px;
+    letter-spacing: 2px;
+    transition: background-color 0.3s;
+}
+
+.tag_block:hover{
+    transition: background-color 0.3s;
+    background-color: #C91B68;
+}
+
+.tag_word{
+    font-family: "Noto Sans TC",sans-serif;
+    font-weight: 700;
+    color:#FFFFFF;
+    font-size:18px;
+    line-height: 18px;
+    margin:0;
+}
+
+.tag_tri{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 8px 0 8px;
+    border-color: #eebbd2 transparent transparent transparent;
+}
+
+.tag_block:hover > .tag_tri{
+    transition: border-color 0.3s;
+    border-color: #C91B68 transparent transparent transparent;
+}
+
+/* animate */
 .animate{
     width:900px;
+    max-width:900px;
     margin:50px auto;
 }
 
+.tour_video{
+    width:100%;
+    border:#FFFFFF solid 20px;
+    border-radius: 30px;
+}
+
+/* intro */
 .intro{
-    width:900px;
+    width: 900px;
     margin:50px auto;
 }
 
