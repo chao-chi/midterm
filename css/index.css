@@ -46,7 +46,6 @@ html{
 
 .header_animate{
     position:absolute;
-    overflow:hidden;
     width:100%;
     height:140px;
     border:0;
@@ -135,12 +134,10 @@ html{
 /* introduction */
 .introduction{
     position:relative;
-    height: 920px;
     width:100%;
     background-color: #fdeff8;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -148,40 +145,75 @@ html{
 .gege{
     position: relative;
     display: flex;
+    margin:100px 0 0 0;
 }
 
+/* gege_img */
 .gege_img{
-    position: relative;
+    display: flex;
     width:200px;
     height:200px;
+    perspective: 1000px;
+}
+
+.gege_img_inner{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.gege_img_f{
     border-radius: 50%;
-    transform:scale(1,1);
-    transition: all 0.3s ease-out;
+    border:10px #eebbd2 solid;
 }
 
-.gege_img:hover{
-    transform:scale(1.2,1.2);
+.gege_img_b{
+    border-radius: 50%;
+    border:10px #eebbd2 solid;
 }
 
+/* gege_flip */
+.gege_img:hover .gege_img_inner {
+    transform: rotateY(180deg);
+  }
+
+.gege_img_b {
+    transform: rotateY(180deg);
+}
+
+.gege_img_f, .gege_img_b {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* gege_text */
 .gege_text{
-    margin-left:100px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
 }
 
 .gege_title{
     font-family: "Noto Sans TC",sans-serif;
     font-weight: 700;
     font-size:36px;
+    margin:0;
 }
 
 .gege_word{
+    display: inline-flex;
     font-family: "Noto Sans TC",sans-serif;
     font-weight: 300;
     font-size:18px;
-    padding:30px;
+    padding:20px 30px;
     background-color: #FFFFFF;
     border-radius: 30px;
-    width: 560px;
-    height: 100px;
+    width: 610px;
+    margin:20px 0 0 0;
+    line-height: 24px;
 }
 
 /* shan */
@@ -189,41 +221,75 @@ html{
     position: relative;
     display: flex;
     flex-direction: row-reverse;
-    margin-top:100px;
+    margin:80px 0 100px 0;
 }
 
+/* gege_img */
 .shan_img{
-    position: relative;
+    display: flex;
     width:200px;
     height:200px;
+    perspective: 1000px;
+}
+
+.shan_img_inner{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.shan_img_f{
     border-radius: 50%;
-    transform:scale(1,1);
-    transition: all 0.3s ease-out;
+    border:10px #eebbd2 solid;
 }
 
-.shan_img:hover{
-    transform:scale(1.2,1.2);
+.shan_img_b{
+    border-radius: 50%;
+    border:10px #eebbd2 solid;
 }
 
+/* shan_flip */
+.shan_img:hover .shan_img_inner {
+    transform: rotateY(180deg);
+  }
+
+.shan_img_b {
+    transform: rotateY(180deg);
+}
+
+.shan_img_f, .shan_img_b {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* shan_text */
 .shan_text{
-    margin-right:100px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
 }
 
 .shan_title{
+    margin:0;
     font-family: "Noto Sans TC",sans-serif;
     font-weight: 700;
-    font-size:36px;
+    font-size: 36px;
 }
 
 .shan_word{
+    display: inline-flex;
     font-family: "Noto Sans TC",sans-serif;
     font-weight: 300;
     font-size:18px;
-    padding:30px;
+    padding:20px 30px;
     background-color: #FFFFFF;
     border-radius: 30px;
-    width: 560px;
-    height: 100px;
+    width: 610px;
+    margin:20px 0 0 0;
+    line-height: 24px;
 }
 
 /* nav_bottom */
