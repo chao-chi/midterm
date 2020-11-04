@@ -27,14 +27,22 @@ html{
 }
 
 /* header */
+.header{
+    position:-webkit-sticky;
+    position:sticky;
+    top:-130px;
+    z-index:9999;
+    /* height:176px;
+    overflow: hidden; */
+}
+
 .logo{
     display:block;
     position: absolute;
     left:106px;
     top:-60px;
     width: 260px;
-    height: 260px;
-    z-index:9;
+    z-index:999;
     transform:scale(1,1);
     transition: all 0.3s ease-out;
 }
@@ -44,12 +52,14 @@ html{
 }
 
 .header_animate{
+    background-color: #FFFFFF;
     position:absolute;
     width:100%;
     height:140px;
     border:0;
-    z-index:0;
+    z-index:99;
 }
+
 /* contatct */
 .contact{
     display: flex;
@@ -57,7 +67,7 @@ html{
     position: absolute;
     top:60px;
     right:120px;
-    z-index:9;
+    z-index:999;
 }
 
 .ig{
@@ -76,6 +86,7 @@ html{
     height: 30px;
     margin-left: 15px;
 }
+
 /* nav */
 .nav{
     display:flex;
@@ -87,7 +98,7 @@ html{
     background-color: #C91B68;
     width:100%;
     height: 36px;
-    z-index:9;
+    z-index:999;
 }
 
 .nav_list{
@@ -106,6 +117,69 @@ html{
     margin-right:55px;
 }
 
+/* nav_sub */
+.nav_sublist1{
+    display:none;
+    position: absolute;
+    list-style:none;
+    top:36px;
+    left:240px;
+    z-index:999;
+    box-shadow:1px 2px 5px 3px rgba(0,0,0,0.1);
+}
+
+.nav_sublist1 .nav_list_item{
+    margin:0;
+    width:90px;
+    height:36px;
+    line-height:18px;
+    padding:9px 0;
+    text-align: center;
+    background-color: #eebbd2;
+    transition: background-color 0.3s;
+
+}
+
+.nav_sublist1 .nav_list_item:hover{
+    background-color: #C91B68;
+    transition: background-color 0.3s;
+}
+
+.nav_list_item:hover > .nav_sublist1{
+    display:block;
+}
+
+.nav_sublist2{
+    display:none;
+    position: absolute;
+    list-style:none;
+    top:36px;
+    left:339px;
+    z-index:999;
+    box-shadow:1px 2px 5px 3px rgba(0,0,0,0.1);
+}
+
+.nav_sublist2 .nav_list_item{
+    margin:0;
+    width:140px;
+    height:36px;
+    line-height:18px;
+    padding:9px 0;
+    text-align: center;
+    background-color: #eebbd2;
+    transition: background-color 0.3s;
+
+}
+
+.nav_sublist2 .nav_list_item:hover{
+    background-color: #C91B68;
+    transition: background-color 0.3s;
+}
+
+.nav_list_item:hover > .nav_sublist2{
+    display:block;
+}
+
 /* article */
 .article{
     display: flex;
@@ -114,65 +188,82 @@ html{
     z-index:99;
     background-color: #fdeff8;
 }
-
 /* tags */
 .tags{
     display: none;
-    position: relative;
-}
-
-.tag_hualian{
-    display:inline-flex;
-    flex-direction: column;
-    align-items: center;
+    position: absolute;
 }
 
 .tag_waterfall{
     display:inline-flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    bottom:482px;
+    left:270px;
 }
 
 .tag_7{
     display:inline-flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    bottom:525px;
+    left:375px;
 }
 
 .tag_nightmk{
     display:inline-flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    bottom:258px;
+    left:190px;
 }
 
 .tag_redtea{
     display:inline-flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    bottom:258px;
+    left:45px;
 }
 
 .tag_bao{
     display:inline-flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    bottom:270px;
+    right:56px;
 }
 
 .tag_starbucks{
     display:inline-flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    bottom:110px;
+    right:235px;
 }
 
 .tag_farm{
     display:inline-flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    bottom:103px;
+    right:352px;
 }
 
 .tag_pineapple{
     display:inline-flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    bottom:268px;
+    right:448px;
 }
 
 /* tags_common */
@@ -188,6 +279,7 @@ html{
 .tag_block:hover{
     transition: background-color 0.3s;
     background-color: #C91B68;
+    z-index:99;
 }
 
 .tag_word{
@@ -210,14 +302,16 @@ html{
 
 .tag_block:hover + .tag_tri{
     transition: border-top-color 0.3s;
-    border-top-color: #C91B68
+    border-top-color: #C91B68;
+    z-index:99;
 }
 
 /* animate */
 .animate{
     width:900px;
     max-width:900px;
-    margin:50px auto;
+    margin:0 auto;
+    margin-top:50px;
 }
 
 .tour_video{
@@ -228,11 +322,14 @@ html{
 
 /* intro */
 .intro{
+    position: relative;
     width: 900px;
-    margin:50px auto;
+    margin:30px auto;
+    margin-bottom:50px;
 }
 
 .title{
+    display:none;
     font-family: "Noto Sans TC",sans-serif;
     font-weight: 700;
     font-size:24px;
@@ -246,6 +343,7 @@ html{
 }
 
 .content{
+    display: none;
     font-family: "Noto Sans TC",sans-serif;
     font-weight: 300;
     font-size:18px;
@@ -258,7 +356,7 @@ html{
 
 
 /* nav_bottom */
-.nav_bottom{
+/* .nav_bottom{
     display:flex;
     align-items: center;
     position: relative;
@@ -283,7 +381,7 @@ html{
     font-weight: 700;
     font-size:18px;
     margin-right:55px;
-}
+} */
 
 /* foooter */
 .footer{
