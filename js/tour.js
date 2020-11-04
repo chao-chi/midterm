@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    document.querySelector("video").playbackRate = 15;
     $('.tour_video').on('ended',function(){
         $('.tags').fadeIn(500);
         $('.img_dot_4').fadeIn(500);
