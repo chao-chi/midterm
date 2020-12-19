@@ -100,4 +100,5 @@ $(document).ready(function(){
         直接買了再去一趟七星潭～
         `);
     });
+
 });
