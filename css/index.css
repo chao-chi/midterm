@@ -32,7 +32,7 @@ html{
     left:106px;
     top:-60px;
     width: 260px;
-    z-index:999;
+    z-index:-9;
     transform:scale(1,1);
     transition: all 0.3s ease-out;
 }
@@ -91,7 +91,8 @@ html{
     max-width: 1280px;
     margin:0 auto;
     position: sticky;
-    margin-top:140px;
+    margin-top:130px;
+    /* 要留白邊的話margin-top +10 */
     z-index:999;
 }
 
@@ -213,7 +214,7 @@ a.nav-link{
 }
 
 /* introduction */
-.introduction{
+.intro{
     position:relative;
     width:100%;
     background-color: #FFFFFF;
@@ -222,69 +223,67 @@ a.nav-link{
     align-items: center;
 }
 
-/* gege */
-.gege{
+/* intro_common */
+.intro_box{
     position: relative;
     display: flex;
     margin:100px 0 0 0;
 }
 
-/* gege_img */
-.gege_img{
+.intro_img{
     display: flex;
     width:200px;
     height:200px;
     perspective: 1000px;
 }
 
-.gege_img_inner{
+.intro_img_inner{
     width: 100%;
     height: 100%;
     transition: transform 0.5s;
     transform-style: preserve-3d;
 }
 
-.gege_img_f{
+.intro_img_f{
     border-radius: 50%;
     border:10px #eebbd2 solid;
 }
 
-.gege_img_b{
+.intro_img_b{
     border-radius: 50%;
     border:10px #eebbd2 solid;
 }
 
-/* gege_flip */
-.gege_img:hover .gege_img_inner {
+/* intreo_img_flip */
+.intro_img:hover .intro_img_inner {
     transform: rotateY(180deg);
   }
 
-.gege_img_b {
+.intro_img_b {
     transform: rotateY(180deg);
 }
 
-.gege_img_f, .gege_img_b {
+.intro_img_f, .intro_img_b {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
 }
 
-/* gege_text */
-.gege_text{
+.intro_text{
     display: flex;
     flex-direction: column;
     margin-left: 50px;
 }
 
-.gege_title{
+.intro_title{
     font-family: "Noto Sans TC",sans-serif;
     font-weight: 700;
     font-size:36px;
     margin:0;
 }
 
-.gege_word{
+.intro_word{
     display: inline-flex;
     font-family: "Noto Sans TC",sans-serif;
     font-weight: 300;
@@ -297,84 +296,12 @@ a.nav-link{
     margin:20px 0 0 0;
     line-height: 24px;
 }
-
-/* shan */
-.shan{
-    position: relative;
-    display: flex;
-    flex-direction: row-reverse;
-    margin:80px 0 100px 0;
-}
-
-/* gege_img */
-.shan_img{
-    display: flex;
-    width:200px;
-    height:200px;
-    perspective: 1000px;
-}
-
-.shan_img_inner{
-    width: 100%;
-    height: 100%;
-    transition: transform 0.5s;
-    transform-style: preserve-3d;
-}
-
-.shan_img_f{
-    border-radius: 50%;
-    border:10px #eebbd2 solid;
-}
-
-.shan_img_b{
-    border-radius: 50%;
-    border:10px #eebbd2 solid;
-}
-
-/* shan_flip */
-.shan_img:hover .shan_img_inner {
-    transform: rotateY(180deg);
-  }
-
-.shan_img_b {
-    transform: rotateY(180deg);
-}
-
-.shan_img_f, .shan_img_b {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
 /* shan_text */
 .shan_text{
-    display: flex;
-    flex-direction: column;
     margin-right: 50px;
 }
 
-.shan_title{
-    margin:0;
-    font-family: "Noto Sans TC",sans-serif;
-    font-weight: 700;
-    font-size: 36px;
-}
-
-.shan_word{
-    display: inline-flex;
-    font-family: "Noto Sans TC",sans-serif;
-    font-weight: 300;
-    font-size:18px;
-    padding:20px 30px;
-    background-color: #FFFFFF;
-    border:10px #eebbd2 solid;
-    border-radius: 30px;
-    width: 610px;
-    margin:20px 0 0 0;
-    line-height: 24px;
-}
-
+/* footer */
 .footer{
     position: relative;
     background-color: #E978AA;
