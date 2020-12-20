@@ -45,7 +45,7 @@ html{
     background-color: #FFFFFF;
     position:absolute;
     width:100%;
-    height:140px;
+    height:130px;
     border:0;
     z-index:-99;
 }
@@ -99,13 +99,6 @@ html{
 
 @media(max-width:992px){
     .navbar{
-        width:100%;
-        max-width: 1280px;
-        margin:0 auto;
-        position: sticky;
-        margin-top:130px;
-        /* 要留白邊的話margin-top +10 */
-        z-index:999;
         padding:6px 16px 7px 16px!important;
     }
 }
@@ -183,6 +176,24 @@ a.nav-link{
     font-family: 'Titan One', cursive;
     font-weight: 900;
     text-shadow: -10px -10px 0 #FFF, 10px -10px 0 #FFF, -10px 10px 0 #FFF, 10px 10px 0 #FFF;
+}
+
+@media(max-width:1280px){
+    .profile_word{
+        font-size:100px ;
+    }
+}
+
+@media(max-width:992px){
+    .profile_word{
+        font-size:80px ;
+    }
+}
+
+@media(max-width:576px){
+    .profile_word{
+        font-size:60px ;
+    }
 }
 
 .img_3g{
