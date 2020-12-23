@@ -7,20 +7,41 @@
 
 /* blocks */
 .blocks{
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    width:1090px;
-    margin:100px auto;
-    justify-content: center;
+    max-width:1200px;
+    margin:0 auto!important;
+    margin-top:100px!important;
 }
 
 .block{
     display: flex;
     width: 470px;
     height: 470px;
-    /* 3D效果 */
     perspective: 1000px;
+    margin-bottom:100px;
+}
+
+@media(max-width:1280px){
+    .blocks{
+        max-width:1000px;
+    }
+    .block{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media(max-width:992px){
+    .block{
+        width: 470px;
+        height: 470px;
+    }
+}
+
+@media(max-width:576px){
+    .block{
+        width: 400px;
+        height: 400px;
+    }
 }
 
 .block_inner{
