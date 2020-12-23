@@ -146,3 +146,14 @@
     }
 }
 
+/* contact_us */
+.contact_us{
+    border:0;
+    height:500px;
+}
+
+@media(max-width:820px){
+    .contact_us{
+        height:600px;
+    }
+}

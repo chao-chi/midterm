@@ -22,3 +22,14 @@
     font-size:36px;
     color:#C91B68;
 }
+
+@media(max-width:768px){
+    .icn_fix{
+        width: 150px;
+        height: 150px;
+    }
+
+    .fix_word{
+        font-size:30px;
+    }
+}
