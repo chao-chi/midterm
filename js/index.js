@@ -25,13 +25,22 @@ $(document).ready(function(){
         let email_v =$email.val();
         let message_v = $message.val();
         
-        messagesRef.add({
-            "name":name_v,
-            "email":email_v,
-            "message":message_v
-        });
-        $name.val('');
-        $email.val('');
-        $message.val('');
+        if (name_v!='' && email_v!='' && message_v!=''){
+            $("#error").addClass("none");
+            messagesRef.add({
+                "name":name_v,
+                "email":email_v,
+                "message":message_v
+            });
+            $name.val('');
+            $email.val('');
+            $message.val('');
+    
+            $("#success").removeClass("none");
+        }
+        else {
+            $("#success").addClass("none");
+            $("#error").removeClass("none");
+        }
     });
 });

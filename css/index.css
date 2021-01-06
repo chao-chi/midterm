@@ -193,6 +193,28 @@
     font-size: 1.2rem!important;
 }
 
+.success{
+    display: flex;
+    line-height: 1.2rem !important;
+    font-size: 1.2rem!important;
+    justify-content: center;
+    align-items:center;
+    color:#409983;
+}
+
+.error{
+    display: flex;
+    line-height: 1.2rem !important;
+    font-size: 1.2rem!important;
+    justify-content: center;
+    align-items:center;
+    color:#ca0000;
+}
+
+.none{
+    display:none;
+}
+
 /* mobirise */
 .form-control {
     font-family: 'Titan One', display;
