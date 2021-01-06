@@ -7,123 +7,15 @@
     background-color: #fdeff8;
 }
 
-/* tags */
-.tags{
+/* map */
+.map{
     display: none;
-    position: absolute;
-    z-index:999;
-}
-
-.tag_waterfall{
-    display:inline-flex;
-    flex-direction: column;
-    align-items: center;
     position: relative;
-    bottom:482px;
-    left:270px;
-}
-
-.tag_7{
-    display:inline-flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    bottom:525px;
-    left:375px;
-}
-
-.tag_nightmk{
-    display:inline-flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    bottom:258px;
-    left:190px;
-}
-
-.tag_redtea{
-    display:inline-flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    bottom:258px;
-    left:45px;
-}
-
-.tag_bao{
-    display:inline-flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    bottom:270px;
-    right:56px;
-}
-
-.tag_starbucks{
-    display:inline-flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    bottom:110px;
-    right:235px;
-}
-
-.tag_farm{
-    display:inline-flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    bottom:103px;
-    right:352px;
-}
-
-.tag_pineapple{
-    display:inline-flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    bottom:268px;
-    right:448px;
-}
-
-/* tags_common */
-.tag_block{
-    background-color: #eebbd2;
-    margin:0;
-    padding:10px 15px;
+    width:100%;
+    border:#FFFFFF solid 20px;
     border-radius: 30px;
-    letter-spacing: 2px;
-    transition: background-color 0.3s;
-}
-
-.tag_block:hover{
-    transition: background-color 0.3s;
-    background-color: #C91B68;
-    z-index:99;
-}
-
-.tag_word{
-    font-family: "Noto Sans TC",sans-serif;
-    font-weight: 700;
-    color:#FFFFFF;
-    font-size:18px;
-    line-height: 18px;
     margin:0;
-}
-
-.tag_tri{
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 16px 8px 0 8px;
-    border-color: #eebbd2 transparent transparent transparent;
-    transition: border-top-color 0.3s;
-}
-
-.tag_block:hover + .tag_tri{
-    transition: border-top-color 0.3s;
-    border-top-color: #C91B68;
-    z-index:99;
+    z-index: 99;
 }
 
 /* video_block */
@@ -136,20 +28,10 @@
 
 .tour_video{
     width:100%;
-    max-width:900px;
+    /* max-width:900px; */
     border:#FFFFFF solid 20px;
     border-radius: 30px;
-}
-
-/* dot_4 */
-.img_dot_4{
-    display: none;
-    position: relative;
-    width:150px;
-    height:150px;
-    bottom:287px;
-    left:402px;
-    z-index: 99;
+    margin:0;
 }
 
 /* intro */
@@ -158,8 +40,6 @@
     width: 900px;
     margin:30px auto;
     margin-bottom:50px;
-    width:100%;
-    max-width: 900px;
 }
 
 .title{

@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;700;900&display=swap" rel="stylesheet">
     <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/jquery.rwdImageMaps.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/tour.js"></script>
@@ -72,57 +73,17 @@
         <article class="article">
             <div class="video_block">
                 <video class="tour_video" src="images/tour.mp4" autoplay muted></video>
-                <div class="tags">
-                    <div class="tag_waterfall" id="tag_waterfall">
-                        <div class="tag_block">
-                            <p class="tag_word">撒固兒瀑布</p>    
-                        </div>
-                        <div class="tag_tri"></div>
-                    </div>
-                    <div class="tag_7" id="tag_7">
-                        <div class="tag_block" >
-                            <p class="tag_word">七星潭</p>    
-                        </div>
-                        <div class="tag_tri"></div>
-                    </div>
-                    <div class="tag_nightmk" id="tag_nightmk">
-                        <div class="tag_block">
-                            <p class="tag_word">東大門夜市</p>    
-                        </div>
-                        <div class="tag_tri"></div>
-                    </div>
-                    <div class="tag_redtea" id="tag_redtea">
-                        <div class="tag_block">
-                            <p class="tag_word">廟口紅茶</p>    
-                        </div>
-                        <div class="tag_tri"></div>
-                    </div>
-                    <div class="tag_bao" id="tag_bao">
-                        <div class="tag_block">
-                            <p class="tag_word">公正包子</p>    
-                        </div>
-                        <div class="tag_tri"></div>
-                    </div>
-                    <div class="tag_starbucks" id="tag_starbucks">
-                        <div class="tag_block">
-                            <p class="tag_word">貨櫃星巴克</p>    
-                        </div>
-                        <div class="tag_tri"></div>
-                    </div>
-                    <div class="tag_farm" id="tag_farm">
-                        <div class="tag_block">
-                            <p class="tag_word">台開心農場</p>    
-                        </div>
-                        <div class="tag_tri"></div>
-                    </div>
-                    <div class="tag_pineapple" id="tag_pineapple">
-                        <div class="tag_block">
-                            <p class="tag_word">四維先生鳳梨冰</p>    
-                        </div>
-                        <div class="tag_tri"></div>
-                    </div>
-                </div>
-                <img class="img_dot_4" src="images/dot_4.png" alt="dot_4">
+                <img src="images/L_map.png" alt="L_map" class="map" usemap="#image-map">
+                <map name="image-map">
+                    <area href="#" class="tag" id="tag_bao" coords="740,199,30" shape="circle">
+                    <area href="#" class="tag" id="tag_pineapple" coords="810,211,47" shape="circle">
+                    <area href="#" class="tag" id="tag_redtea" coords="695,257,36" shape="circle">
+                    <area href="#" class="tag" id="tag_nightmk" coords="760,280,30" shape="circle">
+                    <area href="#" class="tag" id="tag_starbucks" coords="400,445,38" shape="circle">
+                    <area href="#" class="tag" id="tag_farm" coords="480,454,41" shape="circle">
+                    <area href="#" class="tag" id="tag_waterfall" coords="317,67,50" shape="circle">
+                    <area href="#" class="tag" id="tag_7" coords="555,19,53" shape="circle">
+                </map>
             </div>
             <div class="intro">
                 <p class="title" id="title"></p>

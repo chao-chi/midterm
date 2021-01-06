@@ -1,20 +1,11 @@
 $(document).ready(function(){
     $('.tour_video').on('ended',function(){
-        $('.tags').fadeIn(500);
-        $('.img_dot_4').fadeIn(500);
+        $('.map').fadeIn(0);
+        $('.tour_video').remove();
     });
-    
-    // hover_event
-    $('.img_dot_4').mouseenter(function(){
-        $('.img_dot_4').css({'height':'350px','width':'350px','left':'352px','bottom':'387px'});
-        $('.tag_nightmk').css({'bottom':'230px','left':'230px'});
-        $('.tag_bao').css({'bottom':'290px','right':'20px'});
-        $('.tag_pineapple').css({'bottom':'270px','right':'375px'});
-        $('.tag_redtea').css({'bottom':'250px','left':'70px'});
-    });
-
+    $('img[usemap]').rwdImageMaps();
     // click_event
-    $('.tags').click(function(){
+    $('.tag').click(function(){
         $('.title').slideDown(800);
         $('.content').slideDown(800);
     })
