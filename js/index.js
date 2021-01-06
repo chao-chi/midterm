@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    new WOW().init();
+
     var firebaseConfig = {
         apiKey: "AIzaSyDch_dCyYYSvGToPaxIgkK6XEYL3NiRnL4",
         authDomain: "f2e-endterm.firebaseapp.com",
