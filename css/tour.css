@@ -20,8 +20,8 @@
 
 /* video_block */
 .video_block{
-    width:900px;
-    height:523.75px;
+    width:100%;
+    max-width: 900px;
     margin:0 auto;
     margin-top:50px;
 }
@@ -37,7 +37,8 @@
 /* intro */
 .intro{
     position: relative;
-    width: 900px;
+    width:100%;
+    max-width: 900px;
     margin:30px auto;
     margin-bottom:50px;
 }
