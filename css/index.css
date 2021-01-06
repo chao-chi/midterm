@@ -131,9 +131,14 @@
 
 /* intro_RWD */
 @media(max-width:992px){
+    .intro{
+        margin-bottom: 50px;
+    }
+
     .intro_box{
         flex-direction: column;
         align-items: center;
+        margin:50px 0 0 0;
     }
     
     .intro_text{
@@ -145,7 +150,6 @@
         flex-direction: column-reverse;
     }
 }
-
 /* contact_us */
 .contact_us{
     border:0;
