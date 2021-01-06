@@ -126,8 +126,8 @@
     z-index:99;
 }
 
-/* animate */
-.animate{
+/* video_block */
+.video_block{
     width:900px;
     height:523.75px;
     margin:0 auto;
@@ -150,29 +150,7 @@
     bottom:287px;
     left:402px;
     z-index: 99;
-    /* transform:scale(1,1);
-    transition: all 0.3s ease-out; */
 }
-
-/* .img_dot_4:hover{
-    transform:scale(2,2);
-} */
-
-/* .tag_waterfall:hover .img_dot_4{
-    transform:scale(2,2);
-}
-
-.tag_bao:hover .img_dot_4{
-    transform:scale(2,2);
-}
-
-.tag_pineapple:hover .img_dot_4{
-    transform:scale(2,2);
-}
-
-.tag_redtea:hover .img_dot_4{
-    transform:scale(2,2);
-} */
 
 /* intro */
 .intro{
@@ -180,6 +158,8 @@
     width: 900px;
     margin:30px auto;
     margin-bottom:50px;
+    width:100%;
+    max-width: 900px;
 }
 
 .title{
