@@ -18,6 +18,12 @@
     z-index: 99;
 }
 
+@media(max-width:768px){
+    .map{
+        border:#FFFFFF solid 10px;
+    }
+}
+
 /* video_block */
 .video_block{
     width:100%;
