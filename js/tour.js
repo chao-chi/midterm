@@ -3,7 +3,7 @@ $(document).ready(function(){
         $('.map').fadeIn(0);
         $('.tour_video').remove();
     });
-    $('img[usemap]').rwdImageMaps();
+
     // click_event
     $('.tag').click(function(){
         $('.title').slideDown(800);
